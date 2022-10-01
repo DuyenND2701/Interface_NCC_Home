@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+    color: inherit;
+    background-color: inherit;
+    font-size: inherit;
+    
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.NCC_news{
+    color: #000;
+    background-color: #fff;
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.bar{
+    width: 120px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+}
+
+.nav_bar_item{
+    display: block;
+    text-decoration: none;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5c5c5c;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.nav_bar_item:hover{
+    background-color: #5c5c5c;
+    font-weight: bold;
+}
+
+.screen_main{
+    padding: 0;
+    position: relative;
+}
+
+
+.header{
+    text-align: center;
+}
+
+
+.paragraph{
+    margin-top: 30px;
+    background-color: #efefef;
+    
+}
+
+.languages_list{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.languages_list_item{
+    display: block;
+}
+
+div.languages_list_item:not(div.languages_list_item:last-child){
+    margin-right: 50px;
+}
+
+.title{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.content_item{
+    margin-top: 0px;
+}
+
+.image{
+    float: left;
+    margin-right: 10px;
+}
+
+.para{
+    float: right;
+    text-align: left;
+}
+
+.footer{
+    margin-left: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #5c5c5c;
+}
+
+@media only screen and (min-width: 64em)
+{
+    html{
+        height: 100%
+    }
+    .bar{
+        height: auto;
+    }
+    ul{
+        width: 120px;
+    }
+    .content{
+        margin: 30px 100px;
+    }
+    .header{
+        padding-top: 20px;;
+    }
+    .paragraph{
+        padding: 10px 210px;
+    }
+    .languages_list{
+        flex-wrap: auto;
+    }
+    .footer{
+        left: 120px;
+        text-align: left;
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (min-width: 37.5em) and (max-width: 63.9375em){
+    .bar{
+        height: auto;
+    }
+    ul{
+        width: 120px;
+    }
+    .content{
+        margin: 20px 0;
+    }
+    .header{
+        padding-top: 20px;
+        width: 482px;
+        margin: auto;
+    }
+    #logo{
+        max-width: 350px;
+        margin: auto;
+    }
+    .paragraph{
+        padding: 10px 20px;
+    }
+    .languages_list{
+        padding-left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .para:last-child{
+        padding-bottom: 50px;
+    }
+    .footer{
+        left: 120px;
+        text-align: left;
+        padding-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 37.4375em)
+{
+    .NCC_news{
+        width: 100%;
+        flex-direction: column; 
+    }
+    .bar{
+        width: 100%;
+    }
+    ul {
+        width:100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style-type: none;
+        background-color: #333;
+      }
+    .nav_bar_item {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 10px 16px;
+        text-decoration: none;
+      }
+    .screen_main{
+        padding: 20px;
+    }
+    #logo{
+        width: 250px;
+    }
+    .paragraph{
+        padding: 10px;
+    }
+    .languages_list{
+        padding-left: 20px;
+        flex-wrap: wrap;
+    }
+
+    .para:last-child{
+        padding-bottom: 50px;
+    }
+    .footer{
+        text-align: center;
+        left: 0px;
+    }
+      
+}
